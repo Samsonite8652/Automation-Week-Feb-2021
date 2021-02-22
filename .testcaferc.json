@@ -1,0 +1,15 @@
+{
+    "browsers":["chrome"],
+    "src": ["./out-tsc/"],
+    "typescript": {
+        "configPath": "./tsconfig.json"
+    },
+    "reporter": {
+        "name": "spec"
+    },
+    "quarantineMode": false,
+    "skipJsErrors": true,
+    "selectorTimeout": 3000,
+    "assertionTimeout": 3000,
+    "pageLoadTimeout": 3000
+}

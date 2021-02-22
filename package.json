@@ -1,0 +1,24 @@
+{
+  "name": "Automation-Week-Feb-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samsonite8652/Automation-Week-Feb-2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samsonite8652/Automation-Week-Feb-2021/issues"
+  },
+  "homepage": "https://github.com/Samsonite8652/Automation-Week-Feb-2021#readme",
+  "devDependencies": {
+    "testcafe": "^1.11.0"
+  }
+}
