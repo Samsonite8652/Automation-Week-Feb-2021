@@ -1,20 +1,20 @@
 import { Selector, t } from 'testcafe';
+import { CommonPageModel } from './CommonPageModel';
 import { createButtonLocators } from './locators/createButtonlocators';
 import { data } from './data/data';
 
-
+// Instatiate imports
+const common = new CommonPageModel();
 
 export class CreateButtonPageModel {
-    usernameField: Selector = Selector(createButtonLocators.usernameId);
-    passwordField: Selector = Selector(createButtonLocators.passwordId);
-    loginButton: Selector = Selector(createButtonLocators.loginButtonId);
+    // UI artifact
     createButton: Selector = Selector(createButtonLocators.createButtonId);
 
-    // Log into the Admin page using a username and password
+    // Method to log into the Admin page using a username and password
     async adminLogin() {
         await t
-            .typeText(this.usernameField, data.username)
-            .typeText(this.passwordField, data.password)
-            .click(this.loginButton);
+            .typeText(common.usernameField, data.username)
+            .typeText(common.passwordField, data.password)
+            .click(common.loginButton);
     };
-}
+};
