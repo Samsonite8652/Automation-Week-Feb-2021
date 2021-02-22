@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "testcafe",
+    "pretest": "npm run tsc",
     "tsc": "tsc"
   },
   "repository": {

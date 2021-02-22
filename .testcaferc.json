@@ -1,6 +1,6 @@
 {
     "browsers":["chrome"],
-    "src": ["./out-tsc/"],
+    "src": ["./out-tsc/tests/"],
     "typescript": {
         "configPath": "./tsconfig.json"
     },
